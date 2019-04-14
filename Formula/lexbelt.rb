@@ -2,9 +2,9 @@
 class Lexbelt < Formula
   desc "cli tools for AWS Lex"
   homepage "https://github.com/sethkor/lexbelt/"
-  url "https://github.com/sethkor/lexbelt/releases/download/0.0.1/lexbelt_0.0.1_Darwin_amd64.tar.gz"
-  version "0.0.1"
-  sha256 "3a3fa3530b2d9919db2dfc41d8291f15544081a8ce1c01fe2025266c8c625102"
+  url "https://github.com/sethkor/lexbelt/releases/download/0.0.2/lexbelt_0.0.2_Darwin_amd64.tar.gz"
+  version "0.0.2"
+  sha256 "014c38fa1f53177edd45b43102fca228c038091cb72819992452db3ad1be6249"
 
   def install
     bin.install "lexbelt"
