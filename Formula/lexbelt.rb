@@ -9,7 +9,6 @@ class Lexbelt < Formula
     sha256 "b99ffed098ebb1411f04abbea5da46274e2bcf5f821b3670240e30ecc89e5ffa"
   elsif OS.linux?
   
-    puts OS.linux
     if OS.bits == 64 then
 
 #     if OS.bits == 64
