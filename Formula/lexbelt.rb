@@ -8,8 +8,8 @@ class Lexbelt < Formula
     url "https://github.com/sethkor/lexbelt/releases/download/0.0.2/lexbelt_0.0.2_Darwin_amd64.tar.gz"
     sha256 "b99ffed098ebb1411f04abbea5da46274e2bcf5f821b3670240e30ecc89e5ffa"
   elsif OS.linux?
-  
-    if OS.bits == 64 then
+    bits = OS.bits
+    if bits == 64 then
 
 #     if OS.bits == 64
       url "https://github.com/sethkor/lexbelt/releases/download/0.0.2/lexbelt_0.0.2_Linux_amd64.tar.gz"
