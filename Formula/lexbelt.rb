@@ -18,6 +18,7 @@ class Lexbelt < Formula
       sha256 "0910b4419f9739457552bb567774bcf3c89c5c9c5060ceec74d28af55a54092d"
     else
       ohdie "Architecture not supported by this forumla"
+    end
   end
 
   def install
