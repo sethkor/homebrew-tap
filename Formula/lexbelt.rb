@@ -4,7 +4,7 @@ class Lexbelt < Formula
   homepage "https://github.com/sethkor/lexbelt/"
   url "https://github.com/sethkor/lexbelt/releases/download/0.0.2/lexbelt_0.0.2_Darwin_amd64.tar.gz"
   version "0.0.2"
-  sha256 "014c38fa1f53177edd45b43102fca228c038091cb72819992452db3ad1be6249"
+  sha256 "b99ffed098ebb1411f04abbea5da46274e2bcf5f821b3670240e30ecc89e5ffa"
 
   def install
     bin.install "lexbelt"
