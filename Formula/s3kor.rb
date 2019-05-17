@@ -1,7 +1,7 @@
 class S3kor < Formula
   desc "Fast Async S3 tools"
   homepage "https://github.com/sethkor/s3kor/"
-  version "0.0.2"
+  version "0.0.3"
 
   if OS.mac?
     url "https://github.com/sethkor/s3kor/releases/download/0.0.3/s3kor_0.0.3_Darwin_amd64.tar.gz"
