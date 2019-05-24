@@ -1,20 +1,20 @@
 class S3kor < Formula
   desc "Fast Async S3 tools"
   homepage "https://github.com/sethkor/s3kor/"
-  version "0.0.4"
+  version "0.0.5"
 
   if OS.mac?
-    url "https://github.com/sethkor/s3kor/releases/download/0.0.4/s3kor_0.0.4_Darwin_amd64.tar.gz"
-    sha256 "d7084010290ad0310b59125fa1451b39571384e666bcbe1e2b004f848cf35868"
+    url "https://github.com/sethkor/s3kor/releases/download/0.0.5/s3kor_0.0.5_Darwin_amd64.tar.gz"
+    sha256 "917f86fba85fc5b8d11428e1d4b250a8abb3c82dc4e756b6cfddf2e0efeeafc4"
   elsif OS.linux?
   
     case RbConfig::CONFIG["host_cpu"]
     when "aarch64"
-      url "https://github.com/sethkor/s3kor/releases/download/0.0.4/s3kor_0.0.4_Linux_arm64.tar.gz"
-      sha256 "0f85ef0b89bb0455def453b3e969b0b0d780279d63aa2a1049740ded84bd1259"   
+      url "https://github.com/sethkor/s3kor/releases/download/0.0.5/s3kor_0.0.5_Linux_arm64.tar.gz"
+      sha256 "7c02e34f99ff5e13dfa57eaf25e4898192fe9b9f7016c19eb1c7f85d722e8c8e"   
     when "x86_64" 
-      url "https://github.com/sethkor/s3kor/releases/download/0.0.4/s3kor_0.0.4_Linux_amd64.tar.gz"
-      sha256 "ca9141b768d5d80f47795bb3c638dc3030e4496bbe1501fdad7f71265f6c9972"
+      url "https://github.com/sethkor/s3kor/releases/download/0.0.5/s3kor_0.0.5_Linux_amd64.tar.gz"
+      sha256 "917f86fba85fc5b8d11428e1d4b250a8abb3c82dc4e756b6cfddf2e0efeeafc4"
     else
       ohdie "Architecture not supported by this forumla"
     end
