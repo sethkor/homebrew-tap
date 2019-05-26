@@ -5,16 +5,16 @@ class S3kor < Formula
 
   if OS.mac?
     url "https://github.com/sethkor/s3kor/releases/download/0.0.9/s3kor_0.0.9_Darwin_amd64.tar.gz"
-    sha256 "1087e61b057e7ece132f086e292481e78689d77842ba41c4cc2d18a52cb16f75"
+    sha256 "16ea454ad7baf44daf156c1bdd08a4cf0d9efbeadf0c093bde411d23e47a3eb0"
   elsif OS.linux?
   
     case RbConfig::CONFIG["host_cpu"]
     when "aarch64"
       url "https://github.com/sethkor/s3kor/releases/download/0.0.9/s3kor_0.0.9_Linux_arm64.tar.gz"
-      sha256 "04522f7b658df9e3216813c9940a0ea5126265ead4fc10ddb946779c74f98365"   
+      sha256 "e37cfb3b7ea55bb78b294d377e48bb3061f130ebff2229da0021516af7dbad6f"   
     when "x86_64" 
       url "https://github.com/sethkor/s3kor/releases/download/0.0.9/s3kor_0.0.9_Linux_amd64.tar.gz"
-      sha256 "13d0a42625d9b84a2a26e1e4b69dd1e0ce110b288c41ed6dceca2726072899dc"
+      sha256 "b269037a8e7eca495b84b172d01fdfd4d382dda45c93b0854fe1f92aa7a11c04"
     else
       ohdie "Architecture not supported by this forumla"
     end
