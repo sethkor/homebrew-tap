@@ -2,24 +2,24 @@
 class S3kor < Formula
   desc "Fast S3 Tools built in GoLang Using Multiparts and Concurrency"
   homepage ""
-  version "0.0.26"
+  version "0.0.28"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/sethkor/s3kor/releases/download/0.0.26/s3kor_0.0.26_Darwin_amd64.tar.gz"
-    sha256 "52bbabb0ad626109576d182e4769a87522a0b49a6156d4b5cc828575daf4fb36"
+    url "https://github.com/sethkor/s3kor/releases/download/v0.0.28/s3kor_0.0.28_Darwin_amd64.tar.gz"
+    sha256 "b78eecc8db4f97b6f137a49cf085a2ade8e433d31235f55790dacdc671527407"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/sethkor/s3kor/releases/download/0.0.26/s3kor_0.0.26_Linux_amd64.tar.gz"
-      sha256 "3674d0a6bb1c8482d0b2aff6eba9ae25cd48ff9dcb570fbbf0f8cf3b86ab3110"
+      url "https://github.com/sethkor/s3kor/releases/download/v0.0.28/s3kor_0.0.28_Linux_amd64.tar.gz"
+      sha256 "51a380a3ad93d5a7ca740cc200435036c275aed37278cb9ebabc4e5832e99da0"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/sethkor/s3kor/releases/download/0.0.26/s3kor_0.0.26_Linux_arm64.tar.gz"
-        sha256 "8b51d110b06f88a0c415812a1a6cb66af0b9fb82fe40cd494dc3f72c405df0ec"
+        url "https://github.com/sethkor/s3kor/releases/download/v0.0.28/s3kor_0.0.28_Linux_arm64.tar.gz"
+        sha256 "ed2ef95d8d5850dfaefe872a69eaa6dc97c47b5631202e36977a37807352e357"
       else
-        url "https://github.com/sethkor/s3kor/releases/download/0.0.26/s3kor_0.0.26_Linux_armv6.tar.gz"
-        sha256 "679640d453dadad6004056d59f1a5d5cf61f852b004025c36da602a52302f5f5"
+        url "https://github.com/sethkor/s3kor/releases/download/v0.0.28/s3kor_0.0.28_Linux_armv6.tar.gz"
+        sha256 "c31adb148aa1c97318d3a5224b2d2a8e7d017a42788986e7826d2214db7f1be7"
       end
     end
   end
