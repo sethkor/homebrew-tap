@@ -2,24 +2,24 @@
 class Lexbelt < Formula
   desc "Fast S3 Tools built in GoLang Using Multiparts and Concurrency"
   homepage ""
-  version "0.0.6"
+  version ".0.0.7"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/sethkor/lexbelt/releases/download/v0.0.6/lexbelt_0.0.6_Darwin_amd64.tar.gz"
-    sha256 "1642a7b5bee8b6c0e2b1111bc0af1219570d41750130c39e14cfa85cd0219e65"
+    url "https://github.com/sethkor/lexbelt/releases/download/v.0.0.7/lexbelt_.0.0.7_Darwin_amd64.tar.gz"
+    sha256 "948b1e0efeb951e3690708a60ddf8829e61764c35230208684cb358ca98f4f36"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/sethkor/lexbelt/releases/download/v0.0.6/lexbelt_0.0.6_Linux_amd64.tar.gz"
-      sha256 "8ad8b6128f16c64f869aa23386ad3df9c128afff392e69cc31eb7513b29e7f1e"
+      url "https://github.com/sethkor/lexbelt/releases/download/v.0.0.7/lexbelt_.0.0.7_Linux_amd64.tar.gz"
+      sha256 "161a4b4d2779847ca743ea638f87de68a80d0ee7aa5b0a2bb31afb1eee6e7535"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/sethkor/lexbelt/releases/download/v0.0.6/lexbelt_0.0.6_Linux_arm64.tar.gz"
-        sha256 "002420c4f6442e2c32de0cd0e0465f6e60b11e2e7a752ca6dad3d5ee4f213981"
+        url "https://github.com/sethkor/lexbelt/releases/download/v.0.0.7/lexbelt_.0.0.7_Linux_arm64.tar.gz"
+        sha256 "bee9d6df98cdcc1bbb2d02e67dddd668c606ac701a39eb0556a7428c97a6ccb0"
       else
-        url "https://github.com/sethkor/lexbelt/releases/download/v0.0.6/lexbelt_0.0.6_Linux_armv6.tar.gz"
-        sha256 "e270697d5155c96ba1c3d989dc11252e4ad0a17045f5bb3325ba5d826ce85b03"
+        url "https://github.com/sethkor/lexbelt/releases/download/v.0.0.7/lexbelt_.0.0.7_Linux_armv6.tar.gz"
+        sha256 "4f6ea99651c6c3d12c4ff7f0c323ca2c4ca04707c1c76c4b2bebf88053190abe"
       end
     end
   end
