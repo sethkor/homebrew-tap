@@ -2,24 +2,24 @@
 class ConnectBackup < Formula
   desc "Fast S3 Tools built in GoLang Using Multiparts and Concurrency"
   homepage ""
-  version "0.0.10"
+  version "0.0.11"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/sethkor/connect-backup/releases/download/v0.0.10/connect-backup_0.0.10_Darwin_amd64.tar.gz"
-    sha256 "2c78f69c42fc0ca4fb2dd57d710a4569729554708ff7a495cef6fe6ec7136505"
+    url "https://github.com/sethkor/connect-backup/releases/download/v0.0.11/connect-backup_0.0.11_Darwin_amd64.tar.gz"
+    sha256 "72fe30122908d6da0c0144a5862ab5dd5c253a3f11120fc6d91151b3fb61632b"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/sethkor/connect-backup/releases/download/v0.0.10/connect-backup_0.0.10_Linux_amd64.tar.gz"
-      sha256 "58fed3010b061d02bd40630cf5501b33fa83042b22337f3f62f7d2403b3f9039"
+      url "https://github.com/sethkor/connect-backup/releases/download/v0.0.11/connect-backup_0.0.11_Linux_amd64.tar.gz"
+      sha256 "f0d18bce4b496318d5e6d7601f70932fc448b1d1d5f8d7a6701ff4b68a169a9e"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/sethkor/connect-backup/releases/download/v0.0.10/connect-backup_0.0.10_Linux_arm64.tar.gz"
-        sha256 "b94961468557675eb5e3fbcb27e5d72c8514cf6098aea48cea5fc8466e8b4a21"
+        url "https://github.com/sethkor/connect-backup/releases/download/v0.0.11/connect-backup_0.0.11_Linux_arm64.tar.gz"
+        sha256 "9e5d349bef4d3dd6e16068ce96fcf2f93f1eebcbddc33c5ee5565c3bb3709837"
       else
-        url "https://github.com/sethkor/connect-backup/releases/download/v0.0.10/connect-backup_0.0.10_Linux_armv6.tar.gz"
-        sha256 "5c2569eb2229f7bad782033d43f9f5e55221f1503fe752a0cf4f1e980ce454e3"
+        url "https://github.com/sethkor/connect-backup/releases/download/v0.0.11/connect-backup_0.0.11_Linux_armv6.tar.gz"
+        sha256 "8e947cc60e1d0bba2fe734e3ce8306228c6f3beaba7e85680bde86b6c56debc1"
       end
     end
   end
