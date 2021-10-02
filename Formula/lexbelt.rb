@@ -5,28 +5,32 @@
 class Lexbelt < Formula
   desc "Fast S3 Tools built in GoLang Using Multiparts and Concurrency"
   homepage ""
-  version "0.0.8"
+  version "0.0.9"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sethkor/lexbelt/releases/download/v0.0.8/lexbelt_0.0.8_Darwin_amd64.tar.gz"
-      sha256 "f0e8aeee926b6e905b2297d4f5bf3c0ecb64cdd3f19a18ec8ae1f16661fe5752"
+      url "https://github.com/sethkor/lexbelt/releases/download/v0.0.9/lexbelt_0.0.9_Darwin_amd64.tar.gz"
+      sha256 "043d80a2629d9e816264d751510658909d31bdb5a8af7d6623061d16e4f25f0c"
+    end
+    if Hardware::CPU.arm?
+      url "https://github.com/sethkor/lexbelt/releases/download/v0.0.9/lexbelt_0.0.9_Darwin_arm64.tar.gz"
+      sha256 "be4fced8fbf7e4bd9bafeea93b08479ce05313148f5e552de9d730dafa209d55"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/sethkor/lexbelt/releases/download/v0.0.8/lexbelt_0.0.8_Linux_amd64.tar.gz"
-      sha256 "4071b87c998b74d4a1adab9bc08fd1d9b6b5c867e9e473e43d8a48187b5003cc"
+      url "https://github.com/sethkor/lexbelt/releases/download/v0.0.9/lexbelt_0.0.9_Linux_amd64.tar.gz"
+      sha256 "559010574ca6db5ed2731caa0187e2a9644e82fc475768fa3637bbbffef2cc2e"
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/sethkor/lexbelt/releases/download/v0.0.8/lexbelt_0.0.8_Linux_armv6.tar.gz"
-      sha256 "6cc596f39a29c218555d7940578742bde3c69a2a90214b8b9cefbc2a95e6628e"
+      url "https://github.com/sethkor/lexbelt/releases/download/v0.0.9/lexbelt_0.0.9_Linux_armv6.tar.gz"
+      sha256 "70b3a67f963e05fb72801f1a280ddd5c3fe19d0cc305dbb906941fcb074de2dc"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sethkor/lexbelt/releases/download/v0.0.8/lexbelt_0.0.8_Linux_arm64.tar.gz"
-      sha256 "10bf3aec58ee48ae73ae61fb15340e7b0692a33d2b99a2632ca6560882bdcfd1"
+      url "https://github.com/sethkor/lexbelt/releases/download/v0.0.9/lexbelt_0.0.9_Linux_arm64.tar.gz"
+      sha256 "49351736d2fb9642c4f5b7340fcf5adad930fc67d41b3f6bc44ea92134d5ea4a"
     end
   end
 
