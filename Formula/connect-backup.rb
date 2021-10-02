@@ -5,28 +5,32 @@
 class ConnectBackup < Formula
   desc "Fast S3 Tools built in GoLang Using Multiparts and Concurrency"
   homepage ""
-  version "0.0.22"
+  version "0.0.23"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sethkor/connect-backup/releases/download/v0.0.22/connect-backup_0.0.22_Darwin_amd64.tar.gz"
-      sha256 "d74d5889d58f7e108035c25d4135e4704e3edd1d54bb10856b12e3d4936b181a"
+      url "https://github.com/sethkor/connect-backup/releases/download/v0.0.23/connect-backup_0.0.23_Darwin_amd64.tar.gz"
+      sha256 "842bb9d1b3552e6cba5d5efdb3b1b2116cb85ccdbd6e533ab7ad517d37f811ad"
+    end
+    if Hardware::CPU.arm?
+      url "https://github.com/sethkor/connect-backup/releases/download/v0.0.23/connect-backup_0.0.23_Darwin_arm64.tar.gz"
+      sha256 "f13a40f0876ef4e042de0e4c25fb8bbeeeb2b70e7018b0f672f2d6fc532dc350"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/sethkor/connect-backup/releases/download/v0.0.22/connect-backup_0.0.22_Linux_amd64.tar.gz"
-      sha256 "f2195c8ae5c17e6e73aa3a949cbf043d89c40989013f99e683d03a9e93d40b0e"
+      url "https://github.com/sethkor/connect-backup/releases/download/v0.0.23/connect-backup_0.0.23_Linux_amd64.tar.gz"
+      sha256 "614c87bd3fee637f224a7215a575deaee80266e814790728e128c0422e61e6f3"
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/sethkor/connect-backup/releases/download/v0.0.22/connect-backup_0.0.22_Linux_armv6.tar.gz"
-      sha256 "75d78f521afa0a6e4d1ad9abba0322f0d87c606b9c09e6e3eaab82fb213f8a39"
+      url "https://github.com/sethkor/connect-backup/releases/download/v0.0.23/connect-backup_0.0.23_Linux_armv6.tar.gz"
+      sha256 "8704fc92c725ba1d632ae38f2de1d041c84aa1fd0386927a901069fbe2c66483"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sethkor/connect-backup/releases/download/v0.0.22/connect-backup_0.0.22_Linux_arm64.tar.gz"
-      sha256 "4194d31987f8995d9701c00eeecd0ead72d6a5ff76f97f0f6cc56ed9213afb3c"
+      url "https://github.com/sethkor/connect-backup/releases/download/v0.0.23/connect-backup_0.0.23_Linux_arm64.tar.gz"
+      sha256 "a42627762102b4d1fe1107f6843aab86830f6074df83ad9da1eff63a0f79f40d"
     end
   end
 
