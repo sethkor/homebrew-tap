@@ -5,32 +5,32 @@
 class ConnectBackup < Formula
   desc "Fast S3 Tools built in GoLang Using Multiparts and Concurrency"
   homepage ""
-  version "0.0.23"
+  version "0.0.24"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sethkor/connect-backup/releases/download/v0.0.23/connect-backup_0.0.23_Darwin_amd64.tar.gz"
-      sha256 "842bb9d1b3552e6cba5d5efdb3b1b2116cb85ccdbd6e533ab7ad517d37f811ad"
+      url "https://github.com/sethkor/connect-backup/releases/download/v0.0.24/connect-backup_0.0.24_Darwin_amd64.tar.gz"
+      sha256 "facc609584e21b345162cd26825e4cf7bb91544d62d895600b6d62355b56b66b"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sethkor/connect-backup/releases/download/v0.0.23/connect-backup_0.0.23_Darwin_arm64.tar.gz"
-      sha256 "f13a40f0876ef4e042de0e4c25fb8bbeeeb2b70e7018b0f672f2d6fc532dc350"
+      url "https://github.com/sethkor/connect-backup/releases/download/v0.0.24/connect-backup_0.0.24_Darwin_arm64.tar.gz"
+      sha256 "e5330ea9c6bedcbf5fbc5e090addff36130ac27f997c40988e83b155a58752fc"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/sethkor/connect-backup/releases/download/v0.0.23/connect-backup_0.0.23_Linux_amd64.tar.gz"
-      sha256 "614c87bd3fee637f224a7215a575deaee80266e814790728e128c0422e61e6f3"
+      url "https://github.com/sethkor/connect-backup/releases/download/v0.0.24/connect-backup_0.0.24_Linux_amd64.tar.gz"
+      sha256 "d786b1b5c4a0d621eaedb6dcdfd15a8d641f11a4a2e3f80842eb17e0a8494629"
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/sethkor/connect-backup/releases/download/v0.0.23/connect-backup_0.0.23_Linux_armv6.tar.gz"
-      sha256 "8704fc92c725ba1d632ae38f2de1d041c84aa1fd0386927a901069fbe2c66483"
+      url "https://github.com/sethkor/connect-backup/releases/download/v0.0.24/connect-backup_0.0.24_Linux_armv6.tar.gz"
+      sha256 "b675f36beb57c03425a98c4d5ae2d945599f2d1352ee1f23e6d819bacbecaa53"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sethkor/connect-backup/releases/download/v0.0.23/connect-backup_0.0.23_Linux_arm64.tar.gz"
-      sha256 "a42627762102b4d1fe1107f6843aab86830f6074df83ad9da1eff63a0f79f40d"
+      url "https://github.com/sethkor/connect-backup/releases/download/v0.0.24/connect-backup_0.0.24_Linux_arm64.tar.gz"
+      sha256 "6733a76ccf46735076b34343d2fd7fa6988dcfabce5f14626ef16109096c4bd1"
     end
   end
 
