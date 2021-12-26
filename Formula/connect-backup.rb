@@ -5,20 +5,20 @@
 class ConnectBackup < Formula
   desc "Fast S3 Tools built in GoLang Using Multiparts and Concurrency"
   homepage ""
-  version "0.1.1"
+  version "0.1.2"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/sethkor/connect-backup/releases/download/v0.1.1/connect-backup_0.1.1_Darwin_arm64.tar.gz"
-      sha256 "ecbc2067be8ba13d77f8966803d28b42aa9d35d18c99d854a5f6f0e40e5f6b8c"
+      url "https://github.com/sethkor/connect-backup/releases/download/v0.1.2/connect-backup_0.1.2_Darwin_arm64.tar.gz"
+      sha256 "794350d3e999eb180cb4a008903965292b222714c9da99007e5ff1c59a9821d9"
 
       def install
         bin.install "connect-backup"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/sethkor/connect-backup/releases/download/v0.1.1/connect-backup_0.1.1_Darwin_amd64.tar.gz"
-      sha256 "0fa0444fbdb6389ca876fbde688744394bb168076ed98f734043ad59474f266d"
+      url "https://github.com/sethkor/connect-backup/releases/download/v0.1.2/connect-backup_0.1.2_Darwin_amd64.tar.gz"
+      sha256 "9a4155aae7064b103d7668b9e741598185d40f48b7b053e3831c1cbe4ad422ff"
 
       def install
         bin.install "connect-backup"
@@ -27,25 +27,25 @@ class ConnectBackup < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/sethkor/connect-backup/releases/download/v0.1.1/connect-backup_0.1.1_Linux_amd64.tar.gz"
-      sha256 "35ab42de73fae44824a05af1b6788757f2baa84105d8e982fff44a28d89d9779"
-
-      def install
-        bin.install "connect-backup"
-      end
-    end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/sethkor/connect-backup/releases/download/v0.1.1/connect-backup_0.1.1_Linux_armv6.tar.gz"
-      sha256 "a751d8800f89ece465c81e9bf3c0b1b3e138b3c46fceb76bdb891858e73b2c75"
+      url "https://github.com/sethkor/connect-backup/releases/download/v0.1.2/connect-backup_0.1.2_Linux_armv6.tar.gz"
+      sha256 "88b629b7fc9383c3ddab0e3967588ae0a135a5e56cc7a7ae67c715c05582bc72"
 
       def install
         bin.install "connect-backup"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sethkor/connect-backup/releases/download/v0.1.1/connect-backup_0.1.1_Linux_arm64.tar.gz"
-      sha256 "5610505d2b7c913dcc2c714b7fcb5ccc9786a67406e83986242d2add38a73e98"
+      url "https://github.com/sethkor/connect-backup/releases/download/v0.1.2/connect-backup_0.1.2_Linux_arm64.tar.gz"
+      sha256 "11014c8d7dcb147bc2ea8dbbcab3332702b6cbd2fd799ad829b465f186f1d154"
+
+      def install
+        bin.install "connect-backup"
+      end
+    end
+    if Hardware::CPU.intel?
+      url "https://github.com/sethkor/connect-backup/releases/download/v0.1.2/connect-backup_0.1.2_Linux_amd64.tar.gz"
+      sha256 "a429ef04e744d16e5694257604d7518bf0299b8c127de33ec164f5269b08b36e"
 
       def install
         bin.install "connect-backup"
